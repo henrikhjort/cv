@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Etufillari",
+    "startDate": "09/2023",
+    "endDate": "Present",
+    "role": "Full stack developer",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "technologies": ["Next", "Node", "TypeScript", "Azure", "Wordpress", "Azure SQL", "Python"],
+    "classified": false,
+    "svg": "/etufillari.svg"
+  },
+  {
+    "title": "Electricity app",
+    "startDate": "04/2023",
+    "endDate": "09/2023",
+    "role": "Full stack developer",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "technologies": ["React Native", "Node", "TypeScript", "Azure", "Cosmos DB"],
+    "classified": true,
+    "svg": "/sahko.svg"
+  },
+  {
+    "title": "Map application",
+    "startDate": "12/2022",
+    "endDate": "04/2023",
+    "role": "Full stack developer",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "technologies": ["React", "Drupal", "PHP", "MariaDB"],
+    "classified": true,
+    "svg": "/map.svg"
+  }
+]

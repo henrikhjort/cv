@@ -1,0 +1,186 @@
+.purple-tech {
+  --tech-color: var(--primary-purple);
+}
+
+.orange-tech {
+  --tech-color: var(--primary-orange);
+}
+
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: flex-start;
+  background-color: var(--secondary-black);
+  max-width: 75%;
+  border-radius: 10px;
+  animation: flicker 2s infinite;
+  box-shadow: 
+    0 0 10px rgba(0, 0, 0, 0.5), /* Inner shadow */
+    0 0 20px var(--tech-color), /* Outer shadow for the glow effect */
+    inset 0 0 10px rgba(0, 0, 0, 0.5); /* Inner shadow (same as before) */
+}
+
+@keyframes flicker {
+  0%, 100% {
+    box-shadow: 
+      0 0 10px rgba(0, 0, 0, 0.5),
+      0 0 20px var(--tech-color),
+      inset 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  95% {
+    box-shadow: 
+      0 0 10px rgba(0, 0, 0, 0.5),
+      0 0 20px var(--tech-color),
+      inset 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  96%, 97%, 98%, 99% {
+    box-shadow:
+      0 0 10px rgba(0, 0, 0, 0.5),
+      0 0 18px var(--tech-color),
+      inset 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.inner-card-container {
+  padding: 1rem;
+  background-color: var(--primary-black);
+
+}
+
+.button-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.button1 {
+  width: 10px;
+  height: 10px;
+  background-color: var(--secondary-red);
+  margin-top: 1rem;
+  margin-left: 1rem;
+  border-radius: 100%;
+  animation: buttonLight1 1s infinite;
+}
+
+.button2 {
+  width: 10px;
+  height: 10px;
+  background-color: var(--secondary-green);
+  margin-top: 1rem;
+  margin-left: 1rem;
+  border-radius: 100%;
+  animation: buttonLight2 2s infinite;
+}
+
+.title {
+  animation: staticStutter 1s infinite;
+  color: var(--primary-white);
+  font-size: var(--font-size-xxl);
+  margin: 0;
+}
+
+.subtitle {
+  font-size: var(--font-size-md);
+  opacity: var(--opacity-low );
+  margin-bottom: 1rem;
+}
+
+.date-text {
+  font-size: var(--font-size-md);
+  opacity: var(--opacity-medium);
+}
+
+@keyframes staticStutter {
+  0%, 100% {
+    opacity: 1;
+  }
+  10%, 50%, 90% {
+    opacity: 0.75;
+  }
+  30%, 70% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes buttonLight1 {
+  0%, 100% {
+    opacity: 1;
+  }
+  10%, 50%, 90% {
+    opacity: 0.8;
+  }
+  30%, 70% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes buttonLight2 {
+  0%, 100% {
+    opacity: 1;
+  }
+  10%, 50%, 90% {
+    opacity: 0.5;
+  }
+  30%, 70% {
+    opacity: 0.3;
+  }
+}
+
+.body-container {
+  text-wrap: wrap;
+  white-space: normal;
+  overflow: hidden;
+}
+
+.body-text {
+  color: var(--primary-green);
+  margin: 0;
+  font-family: var(--font-family-screen);
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.cursor {
+  animation: blink 1s infinite;
+  font-weight: bold;
+}
+
+.classified-text {
+  color: var(--secondary-red);
+  font-size: var(--font-size-md); /* Adjust the font size as needed */
+  transform: rotate(15deg); /* Tilt the text slightly */
+  display: inline-block; /* Make the text inline-block for better positioning */
+  margin-right: 8px; /* Add some margin for spacing */
+}
+
+.tech-title {
+  color: var(--tech-color);
+  opacity: var(--opacity-high);
+}
+
+.tech-text {
+  opacity: var(--opacity-medium);
+}
+
+.value-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.value-text {
+  font-size: var(--font-size-md);
+  opacity: var(--opacity-high);
+  margin-right: 2px;
+}
+
+.error-text {
+  color: var(--secondary-red);
+  font-size: var(--font-size-md);
+}
