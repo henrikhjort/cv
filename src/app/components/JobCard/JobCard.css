@@ -6,7 +6,6 @@
   --tech-color: var(--primary-orange);
 }
 
-
 .card-container {
   display: flex;
   flex-direction: column;
@@ -15,11 +14,17 @@
   background-color: var(--secondary-black);
   max-width: 75%;
   border-radius: 10px;
-  animation: flicker 2s infinite;
+}
+
+.power-on {
   box-shadow: 
     0 0 10px rgba(0, 0, 0, 0.5), /* Inner shadow */
     0 0 20px var(--tech-color), /* Outer shadow for the glow effect */
     inset 0 0 10px rgba(0, 0, 0, 0.5); /* Inner shadow (same as before) */
+}
+
+.flicker {
+  animation: flicker 2s infinite;
 }
 
 @keyframes flicker {
@@ -75,11 +80,46 @@
   animation: buttonLight2 2s infinite;
 }
 
+.button-power {
+  width: 40px;
+  height: 20px;
+  background-color: var(--primary-grey);
+  margin-top: 1rem;
+  margin-left: 0.9rem;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-power::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: var(--primary-black);
+  border-radius: 50%;
+  transition: left 0.3s;
+}
+
+.button-power-on {
+  background-color: var(--primary-green);
+}
+
+.button-power-on::after {
+  left: 22px;
+}
+
 .title {
-  animation: staticStutter 1s infinite;
   color: var(--primary-white);
   font-size: var(--font-size-xxl);
   margin: 0;
+}
+
+.stutter {
+  animation: stutter 1s infinite;
 }
 
 .subtitle {
@@ -93,7 +133,7 @@
   opacity: var(--opacity-medium);
 }
 
-@keyframes staticStutter {
+@keyframes stutter {
   0%, 100% {
     opacity: 1;
   }

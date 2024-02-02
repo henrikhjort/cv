@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './JobCard.css';
 import type { Job } from '@/app/types/types';
@@ -9,12 +9,18 @@ interface JobCardProps {
 };
 
 const JobCard = ({ index, data }: JobCardProps) => {
+  const [isFlickering, setIsFlickering] = useState(true);
   const isEven = index % 2 === 0;
+
   const techColorClass = isEven ? 'purple-tech' : 'orange-tech';
+  const flickerClass = isFlickering ? 'flicker' : '';
+  const backlightClass = isFlickering ? 'power-on' : '';
+  const staticFlickerClass = isFlickering ? 'stutter' : '';
+  const buttonClass = `button-power ${isFlickering ? 'button-power-on' : ''}`;
   return (
-    <div className={`card-container ${techColorClass}`}>
+    <div className={`card-container ${techColorClass} ${flickerClass} ${backlightClass}`}>
       <div className="inner-card-container">
-        <h2 className="title">
+        <h2 className={`title ${staticFlickerClass}`}>
           {data.title}
           {data.classified ? (
             <span className="classified-text">[CONFIDENTAL]</span>
@@ -25,7 +31,8 @@ const JobCard = ({ index, data }: JobCardProps) => {
         <div className="body-container">
           <p className="body-text">
             {data.body}
-            <span className="cursor">_</span>
+            {isFlickering ? (
+              <span className="cursor">_</span>) : null}
           </p>
           {data.technologies ? (
             <div className="tech-container">
@@ -38,6 +45,9 @@ const JobCard = ({ index, data }: JobCardProps) => {
       <div className="button-row">
         <div className="button1"></div>
         <div className="button2"></div>
+      </div>
+      <div className="button-row">
+        <div onClick={() => setIsFlickering(!isFlickering)} className={buttonClass}></div>
       </div>
     </div>
   );
