@@ -52,7 +52,7 @@ const JobSection = ({ index, data }: JobSectionProps) => {
         <Image
           src={data.svg}
           alt="mankeli"
-          width={600}
+          width={500}
           height={1000}
           className="image"
           priority
