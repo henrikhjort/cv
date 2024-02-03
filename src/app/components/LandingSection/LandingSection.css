@@ -34,10 +34,6 @@
   border-radius: 10px;
   word-wrap: break-word;
   height: 300;
-  background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-  background-size: 20px 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -122,9 +118,4 @@
   position: relative;
   padding-left: 2rem;
   padding-right: 2rem;
-}
-
-.bottom-accent {
-  height: 50px;
-  width: 100%;
 }

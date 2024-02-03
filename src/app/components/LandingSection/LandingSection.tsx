@@ -33,7 +33,6 @@ const LandingSection: React.FC = () => {
               henrik.m.hjort(at)gmail.com
             </a>
           </p>
-          <div className="bottom-accent"></div>
         </div>
       </div>
     </div>
