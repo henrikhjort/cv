@@ -28,7 +28,7 @@
 
 .image-label-container {
   background-color: var(--primary-black);
-  transform: translateY(100px);
+  transform: translateY(125px);
   padding: 5px;
   border-radius: 20px;
 }
