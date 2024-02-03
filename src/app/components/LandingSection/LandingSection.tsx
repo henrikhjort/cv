@@ -17,7 +17,7 @@ const LandingSection: React.FC = () => {
               className="image"
               priority
             />
-            <p className="image-text">subject</p>
+            <p className="image-text">subject_0</p>
           </div>
         </a>
         <div className="contact-rows">
