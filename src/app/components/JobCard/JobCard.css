@@ -18,9 +18,9 @@
 
 .power-on {
   box-shadow: 
-    0 0 10px rgba(0, 0, 0, 0.5), /* Inner shadow */
-    0 0 20px var(--tech-color), /* Outer shadow for the glow effect */
-    inset 0 0 10px rgba(0, 0, 0, 0.5); /* Inner shadow (same as before) */
+    0 0 10px rgba(0, 0, 0, 0.5),
+    0 0 20px var(--tech-color),
+    inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .flicker {

@@ -27,11 +27,10 @@ const JobSection = ({ index, data }: JobSectionProps) => {
       entries.forEach((entry) => {
         console.log(entry);
         if (entry.isIntersecting) {
-          console.log(`${index} is in view`);
           // Execute your logic here
         }
       });
-    }, { threshold: 0.5 }); // Adjust threshold as needed
+    }, { threshold: 0.5 });
 
     if (ref.current) {
       observer.observe(ref.current);
@@ -43,14 +42,6 @@ const JobSection = ({ index, data }: JobSectionProps) => {
       }
     };
   }, [index]);
-
-  const getRandomNumber = () => {
-    return Math.floor(Math.random() * 100);
-  }
-
-  const getRandomLetter = () => {
-    return String.fromCharCode(65 + Math.floor(Math.random() * 26));
-  }
 
   return (
     <div className="section" id={index.toString()}>
