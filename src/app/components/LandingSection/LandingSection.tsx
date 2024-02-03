@@ -2,29 +2,31 @@ import React from 'react';
 import Image from 'next/image';
 import './LandingSection.css';
 
-// Functional component with TypeScript
 const LandingSection: React.FC = () => {
+  const linkedinUrl = 'https://www.linkedin.com/in/henrik-hjort-50944b107';
   return (
     <div className="landing-section">
       <div className="contact-info">
-        <div className="image-container">
-          <Image
-            src={'/meitsi.svg'}
-            alt="mankeli"
-            width={400}
-            height={300}
-            className="image"
-            priority
-          />
-          <p className="image-text">subject</p>
-        </div>
+        <a href={linkedinUrl} className="image-container">
+          <div className="image-container">
+            <Image
+              src={'/meitsi.svg'}
+              alt="mankeli"
+              width={400}
+              height={300}
+              className="image"
+              priority
+            />
+            <p className="image-text">subject</p>
+          </div>
+        </a>
         <div className="contact-rows">
           <div className="name-container">
             <div className="first-name-container">
-              <h1 className="first-name">henrik</h1>
+              <h1 className="first-name"><a href={linkedinUrl}>henrik</a></h1>
             </div>
             <div className="last-name-container">
-              <h1 className="last-name">hjort</h1>
+              <h1 className="last-name"><a href={linkedinUrl}>hjort</a></h1>
             </div>
           </div>
           <p className="contact-info-title">software developer</p>
