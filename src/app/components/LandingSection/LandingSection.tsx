@@ -10,7 +10,7 @@ const LandingSection: React.FC = () => {
         <a href={linkedinUrl} className="image-container">
           <div className="image-container">
             <Image
-              src={'/meitsi.svg'}
+              src={'/silma.svg'}
               alt="mankeli"
               width={400}
               height={300}
@@ -35,6 +35,14 @@ const LandingSection: React.FC = () => {
               henrik.m.hjort(at)gmail.com
             </a>
           </p>
+          <div className="socials-row">
+            <p className="socials-item">
+              <a href="https://github.com/henrikhjort" style={{ textDecoration: 'none', color: 'inherit' }}>github</a>
+            </p>
+            <p className="socials-item">
+              <a href={linkedinUrl} style={{ textDecoration: 'none', color: 'inherit' }}>linkedin</a>
+            </p>
+          </div>
         </div>
       </div>
     </div>

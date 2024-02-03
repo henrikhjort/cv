@@ -4,7 +4,7 @@
     "startDate": "09/2023",
     "endDate": "Present",
     "role": "Etufillari",
-    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "body": "Implementation of a bike benefit system that serves end users, employers and internal help desk users. Migration of data from a previous system. Putting together a CI/CD system. Mentoring another developer.",
     "technologies": ["Next", "Node", "TypeScript", "Azure", "Wordpress", "Azure SQL", "Python"],
     "classified": false,
     "svg": "/etufillari.svg"
@@ -14,17 +14,18 @@
     "startDate": "12/2023",
     "endDate": "01/2024",
     "role": "Personal",
-    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-    "technologies": ["React Native", "Express", "MongoDB"],
+    "body": "Finance tracking application. Mobile app combined with a backend server.",
+    "technologies": ["React Native", "Express", "TypeScript", "MongoDB"],
     "classified": false,
-    "svg": "/saukko.svg"
+    "svg": "/saukko.svg",
+    "url": "https://github.com/henrikhjort/moneys"
   },
   {
     "title": "Electricity app",
     "startDate": "04/2023",
     "endDate": "09/2023",
     "role": "Exove",
-    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "body": "Implementation of an electricity mobile application. Allows users to track consumption, view graphs, compare data, view electricity market price etc. Worked on both client and server side.",
     "technologies": ["React Native", "Node", "TypeScript", "Azure", "Cosmos DB"],
     "classified": true,
     "svg": "/sahko.svg"
@@ -34,7 +35,7 @@
     "startDate": "12/2022",
     "endDate": "04/2023",
     "role": "Exove",
-    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "body": "A React app embedded in a Drupal site. The application displays a world map and allows users to filter and view data of countries.",
     "technologies": ["React", "Drupal", "PHP", "MariaDB"],
     "classified": true,
     "svg": "/map.svg"
@@ -44,9 +45,49 @@
     "startDate": "2020",
     "endDate": "2021",
     "role": "Exove",
-    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-    "technologies": ["React"],
+    "body": "An application that allows the user to place objects and buildings on the map and then generate a heatmap.",
+    "technologies": ["React, Drupal"],
     "classified": true,
     "svg": "/tower.svg"
+  },
+  {
+    "title": "Plumber",
+    "startDate": "2020",
+    "endDate": "2020",
+    "role": "Personal",
+    "body": "Trained a neural network on images of my friends. The model ended up generating disfigured semi human pictures which I used in a Tinder-like React app. Works only offline.",
+    "technologies": ["React", "PyTorch"],
+    "classified": true,
+    "svg": "/robo4.svg"
+  },
+  {
+    "title": "Data processing system",
+    "startDate": "2019",
+    "endDate": "2023",
+    "role": "Exove",
+    "body": "Implementation and maintenance of a system that processes large amounts of data every night. Worked on both client and server side.",
+    "technologies": ["React, Node", "PostgreSQL"],
+    "classified": true,
+    "svg": "/robo4.svg"
+  },
+  {
+    "title": "Housing company",
+    "startDate": "2018",
+    "endDate": "2022",
+    "role": "Exove",
+    "body": "Implementation and maintenance of a cron job that fetches data and creates or updates Drupal nodes. Implementation of a REST API that serves those nodes to a React application.",
+    "technologies": ["React", "Drupal", "MariaDB"],
+    "classified": true,
+    "svg": "/robo.svg"
+  },
+  {
+    "title": "Deep spiritual quote generator",
+    "startDate": "2018",
+    "endDate": "2018",
+    "role": "Personal",
+    "body": "Scraped deep quotes of life and love from the internet. Trained a language model that generates text from that material. Built a Flask API to serve that and a React app to fetch and display the data.",
+    "technologies": ["React", "PyTorch", "Flask"],
+    "classified": true,
+    "svg": "/robo4.svg"
   }
 ]

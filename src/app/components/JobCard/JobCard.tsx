@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 import './JobCard.css';
 import type { Job } from '@/app/types/types';
@@ -20,6 +21,16 @@ const JobCard = ({ index, data }: JobCardProps) => {
   return (
     <div className={`card-container ${techColorClass} ${flickerClass} ${backlightClass}`}>
       <div className="inner-card-container">
+        <div className="mobile-image-container">
+          <Image
+            src={data.svg}
+            alt="mankeli"
+            width={15}
+            height={15}
+            className="mobile-image"
+            priority
+          />
+        </div>
         <h2 className={`title ${staticFlickerClass}`}>
           {data.title}
           {data.classified ? (
@@ -40,14 +51,19 @@ const JobCard = ({ index, data }: JobCardProps) => {
               <p className="tech-text">{data.technologies.join(', ')}</p>
             </div>
           ) : null}
+          {data.url ? (
+            <p className="job-url"><a href={data.url}>github</a></p>
+          ): null}
         </div>
       </div>
       <div className="button-row">
         <div className="button1"></div>
         <div className="button2"></div>
       </div>
-      <div className="button-row">
+      <div className="button-row2">
         <div onClick={() => setIsFlickering(!isFlickering)} className={buttonClass}></div>
+        <span className="speaker-span">. . .</span>
+        <span className="invisible-span">1337</span>
       </div>
     </div>
   );

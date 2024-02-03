@@ -7,4 +7,5 @@ export interface Job {
   technologies: string[];
   classified: boolean;
   svg: string;
+  url?: string;
 }
