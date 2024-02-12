@@ -12,7 +12,7 @@ const LandingSection: React.FC = () => {
             <Image
               src={'/silma.svg'}
               alt="mankeli"
-              width={400}
+              width={300}
               height={300}
               className="image"
               priority
