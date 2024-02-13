@@ -4,8 +4,8 @@
     "startDate": "09/2023",
     "endDate": "Present",
     "role": "Etufillari",
-    "body": "Implementation of a bike benefit system that serves end users, employers and internal help desk users. Migration of data from a previous system. Putting together a CI/CD system. Mentoring another developer.",
-    "technologies": ["Next", "Node", "TypeScript", "Azure", "Wordpress", "Azure SQL", "Python"],
+    "body": "Lead developer in a work benefit bicycle system project. The goal is to build a new system with modern technologies. Responsibilities include frontend development, backend development, building a database schema, CI/CD, testing and project management.",
+    "technologies": ["Next", "Node", "TypeScript", "Azure", "Wordpress", "Azure SQL", "Python", "CI/CD"],
     "classified": false,
     "svg": "/etufillari.svg"
   },
@@ -14,7 +14,7 @@
     "startDate": "12/2023",
     "endDate": "01/2024",
     "role": "Personal",
-    "body": "Finance tracking application. Mobile app combined with a backend server.",
+    "body": "I tracked my spendings using a Google sheet. Very soon I grew tired of inputting timestamps in the sheet and decided to build a mobile application for it. The app allows the user to track spendings, view statistics and set recurring costs. The backend is built with Express and MongoDB. The frontend is built with React Native.",
     "technologies": ["React Native", "Express", "TypeScript", "MongoDB"],
     "classified": false,
     "svg": "/saukko.svg",
@@ -57,7 +57,7 @@
     "role": "Personal",
     "body": "Trained a neural network on images of my friends. The model ended up generating disfigured semi human pictures which I used in a Tinder-like React app. Works only offline.",
     "technologies": ["React", "PyTorch"],
-    "classified": true,
+    "classified": false,
     "svg": "/robo4.svg"
   },
   {
@@ -87,7 +87,7 @@
     "role": "Personal",
     "body": "Scraped deep quotes of life and love from the internet. Trained a language model that generates text from that material. Built a Flask API to serve that and a React app to fetch and display the data.",
     "technologies": ["React", "PyTorch", "Flask"],
-    "classified": true,
+    "classified": false,
     "svg": "/robo4.svg"
   }
 ]

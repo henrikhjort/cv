@@ -10,10 +10,10 @@ const LandingSection: React.FC = () => {
         <a href={linkedinUrl} className="image-container">
           <div className="image-container">
             <Image
-              src={'/silma.svg'}
-              alt="mankeli"
+              src={'/meitsi.svg'}
+              alt="subject_0"
               width={300}
-              height={300}
+              height={200}
               className="image"
               priority
             />

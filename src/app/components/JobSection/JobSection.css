@@ -27,12 +27,18 @@
 }
 
 .image-label-container {
+  position: absolute; /* Change from relative to absolute */
+  top: 5rem; /* Adjust this value to position the label closer to the top; was translateY(125px) */
+  left: 50%; /* Center align the container */
+  transform: translateX(-50%); /* Adjust horizontally to center the element */
   background-color: var(--primary-black);
-  transform: translateY(125px);
   padding: 5px;
   border-radius: 20px;
 }
 
+.image {
+  align-self: center;
+}
 
 .image-label {
   color: var(--primary-green);

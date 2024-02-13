@@ -102,6 +102,12 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+  .last-name-container {
+    background-color: var(--primary-black);
+  }
+}
+
 .last-name-container:hover {
   background-color: var(--primary-green);
 }
@@ -132,12 +138,15 @@ a {
 @media screen and (max-width: 768px) {
   .last-name {
     font-size: var(--font-size-xxl);
+    color: var(--primary-white);
   }
 }
 
 .contact-info-title {
   font-size: var(--font-size-xxl);
   opacity: var(--opacity-low);
+  margin-top: 1rem;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -149,6 +158,8 @@ a {
 .contact-info-email {
   font-size: var(--font-size-xl);
   color: var(--primary-green);
+  margin-top: 1rem;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 768px) {
