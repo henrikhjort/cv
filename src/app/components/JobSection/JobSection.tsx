@@ -22,27 +22,6 @@ const JobSection = ({ index, data }: JobSectionProps) => {
     setLabel(`Exhibit ${getRandomNumber()}${getRandomLetter()}`);
   }, []);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        console.log(entry);
-        if (entry.isIntersecting) {
-          // Execute your logic here
-        }
-      });
-    }, { threshold: 0.5 });
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
-    };
-  }, [index]);
-
   return (
     <div className="section" id={index.toString()}>
       <div className="leftSide">
@@ -53,7 +32,7 @@ const JobSection = ({ index, data }: JobSectionProps) => {
           src={data.svg}
           alt="mankeli"
           width={500}
-          height={1000}
+          height={800}
           className="image"
           priority
         />
