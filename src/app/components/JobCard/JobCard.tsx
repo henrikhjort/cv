@@ -61,7 +61,6 @@ const JobCard = ({ index, data }: JobCardProps) => {
       </div>
       <div className="button-row2">
         <div onClick={() => setIsFlickering(!isFlickering)} className={buttonClass}></div>
-        <span className="invisible-span">1337</span>
       </div>
     </div>
   );

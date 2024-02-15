@@ -17,6 +17,25 @@
   transform: perspective(600px) rotateY(-7deg);
 }
 
+.card-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/pattern.svg');
+  background-size: cover;
+  opacity: 0.3; /* Adjust based on your texture */
+  z-index: -1;
+  animation: textureMove 30s infinite linear;
+}
+
+@keyframes textureMove {
+  0% { background-position: 0 0; }
+  100% { background-position: 1000px 1000px; }
+}
+
 @media screen and (max-width: 768px) {
   .card-container {
     max-width: 100%;
@@ -28,21 +47,21 @@
 @keyframes flicker {
   0%, 100% {
     box-shadow: 
-      0 0 8px var(--primary-green), /* Base state */
-      0 0 20px var(--primary-green),
-      0 0 40px var(--primary-green);
+      2px 0 8px var(--primary-green), /* Base state */
+      4px 0 20px var(--primary-green),
+      5px 0 40px var(--primary-green);
   }
   50% {
     box-shadow: 
-      0 0 10px var(--primary-green), /* Slightly more intense */
-      0 0 22px var(--primary-green), /* Slightly wider spread */
-      0 0 42px var(--primary-green); /* Slightly wider spread */
+      3px 0 10px var(--primary-green), /* Slightly more intense */
+      5px 0 22px var(--primary-green), /* Slightly wider spread */
+      6px 0 42px var(--primary-green); /* Slightly wider spread */
   }
   25%, 75% {
     box-shadow: 
-      0 0 6px var(--primary-green), /* Slightly less intense */
-      0 0 18px var(--primary-green), /* Slightly narrower spread */
-      0 0 38px var(--primary-green); /* Slightly narrower spread */
+      1px 0 6px var(--primary-green), /* Slightly less intense */
+      3px 0 18px var(--primary-green), /* Slightly narrower spread */
+      5px 0 38px var(--primary-green); /* Slightly narrower spread */
   }
 }
 
@@ -102,6 +121,16 @@
   animation: buttonLight2 2s infinite;
 }
 
+.button-power:hover, .button-power:focus {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 8px var(--primary-green); }
+  50% { box-shadow: 0 0 20px var(--primary-green); }
+  100% { box-shadow: 0 0 8px var(--primary-green); }
+}
+
 .button-power {
   width: 40px;
   height: 20px;
@@ -158,6 +187,20 @@
   font-size: var(--font-size-md);
   opacity: var(--opacity-low );
   margin-bottom: 1rem;
+  display: inline-block;
+  animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+  0%, 100% {
+    transform: skew(0deg);
+  }
+  10%, 30%, 50%, 70% {
+    transform: skew(5deg);
+  }
+  20%, 40%, 60% {
+    transform: skew(-5deg);
+  }
 }
 
 .date-text {
@@ -235,6 +278,8 @@
 .tech-title {
   color: var(--tech-color);
   opacity: var(--opacity-high);
+  display: inline-block;
+  animation: glitch 1s infinite;
 }
 
 .tech-text {
