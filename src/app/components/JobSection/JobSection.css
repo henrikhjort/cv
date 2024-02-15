@@ -40,6 +40,27 @@
   align-self: center;
 }
 
+.annotation {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  color: var(--primary-green);
+  font-family: var(--font-family-screen);
+}
+
+.dot {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--primary-green);
+  transform: translate(-50%, -50%);
+}
+
+.line {
+  /* Basic line styles are set inline as above */
+}
+
 .image-label {
   color: var(--primary-green);
   margin: 0;

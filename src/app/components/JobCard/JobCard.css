@@ -176,7 +176,7 @@
 .title {
   color: var(--primary-white);
   font-size: var(--font-size-xxl);
-  margin: 0;
+  margin: 4px;
 }
 
 .stutter {
@@ -186,9 +186,9 @@
 .subtitle {
   font-size: var(--font-size-md);
   opacity: var(--opacity-low );
-  margin-bottom: 1rem;
   display: inline-block;
   animation: glitch 1s infinite;
+  margin: 4px;
 }
 
 @keyframes glitch {
@@ -206,6 +206,7 @@
 .date-text {
   font-size: var(--font-size-lg);
   opacity: var(--opacity-medium);
+  margin: 4px;
 }
 
 @keyframes stutter {
@@ -255,6 +256,7 @@
   margin: 0;
   font-family: var(--font-family-screen);
   font-size: var(--font-size-lg);
+  margin: 4px;
 }
 
 @keyframes blink {
@@ -272,7 +274,7 @@
   font-size: var(--font-size-md); /* Adjust the font size as needed */
   transform: rotate(15deg); /* Tilt the text slightly */
   display: inline-block; /* Make the text inline-block for better positioning */
-  margin-right: 8px; /* Add some margin for spacing */
+  margin: 4px;
 }
 
 .tech-title {
@@ -280,15 +282,18 @@
   opacity: var(--opacity-high);
   display: inline-block;
   animation: glitch 1s infinite;
+  margin: 4px;
 }
 
 .tech-text {
   opacity: var(--opacity-medium);
+  margin: 4px;
 }
 
 .job-url {
   color: var(--tech-color);
   opacity: var(--opacity-high);
+  margin: 4px;
 }
 
 .value-container {
@@ -300,7 +305,7 @@
 .value-text {
   font-size: var(--font-size-md);
   opacity: var(--opacity-high);
-  margin-right: 2px;
+  margin: 4px;
 }
 
 .error-text {

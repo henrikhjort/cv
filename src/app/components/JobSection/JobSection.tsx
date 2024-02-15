@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 
 import './JobSection.css';
@@ -11,8 +11,12 @@ interface JobSectionProps {
   data: Job
 };
 
+type Dot = {
+  x: number;
+  y: number;
+};
+
 const JobSection = ({ index, data }: JobSectionProps) => {
-  const ref = useRef(null);
   const [label, setLabel] = useState('');
 
   useEffect(() => {
@@ -28,14 +32,14 @@ const JobSection = ({ index, data }: JobSectionProps) => {
         <div className="image-label-container">
           <h3 className="image-label">{label}</h3>
         </div>
-        <Image
-          src={data.svg}
-          alt="mankeli"
-          width={500}
-          height={800}
-          className="image"
-          priority
-        />
+          <Image
+            src={data.svg}
+            alt="mankeli"
+            width={500}
+            height={800}
+            className="image"
+            priority
+          />
       </div>
       <div className="rightSide">
         <JobCard index={index} data={data} />

@@ -55,7 +55,7 @@
     "startDate": "2020",
     "endDate": "2020",
     "role": "Personal",
-    "body": "Trained a neural network on images of my friends. The model ended up generating disfigured semi human pictures which I used in a Tinder-like React app. Works only offline.",
+    "body": "Trained a neural network on images of my friends. The model ended up generating monstrous almost human like pictures which I used in a Tinder-like React app. Works only offline.",
     "technologies": ["React", "PyTorch"],
     "classified": false,
     "svg": "/robo4.svg"
