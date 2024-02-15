@@ -6,10 +6,29 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "henrikhjort",
-  description: "Selling software expertise",
+  description: "Web software development",
   icons: {
     icon: '/favicon.png',
-  }
+  },
+  keywords: [
+    "code",
+    "software",
+    "web developer",
+    "web development",
+    "development",
+    "developer",
+    "freelancer",
+    "henrik hjort",
+    "react",
+    "reactjs",
+    "node",
+    "nodejs",
+    "next",
+    "nextjs",
+    "fullstack",
+    "full stack",
+    "full-stack",
+  ],
 };
 
 export default function RootLayout({

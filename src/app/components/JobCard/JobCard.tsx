@@ -14,13 +14,12 @@ const JobCard = ({ index, data }: JobCardProps) => {
   const isEven = index % 2 === 0;
 
   const techColorClass = isEven ? 'purple-tech' : 'orange-tech';
-  const flickerClass = isFlickering ? 'flicker' : '';
   const backlightClass = isFlickering ? 'power-on' : '';
   const staticFlickerClass = isFlickering ? 'stutter' : '';
   const buttonClass = `button-power ${isFlickering ? 'button-power-on' : ''}`;
   return (
-    <div className={`card-container ${techColorClass} ${flickerClass} ${backlightClass}`}>
-      <div className="inner-card-container">
+    <div className={`card-container ${techColorClass}`}>
+      <div className={`inner-card-container ${backlightClass}`}>
         <div className="mobile-image-container">
           <Image
             src={data.svg}
@@ -62,7 +61,6 @@ const JobCard = ({ index, data }: JobCardProps) => {
       </div>
       <div className="button-row2">
         <div onClick={() => setIsFlickering(!isFlickering)} className={buttonClass}></div>
-        <span className="speaker-span">. . .</span>
         <span className="invisible-span">1337</span>
       </div>
     </div>

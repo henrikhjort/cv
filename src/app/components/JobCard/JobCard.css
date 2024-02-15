@@ -12,47 +12,43 @@
   padding: 1rem;
   align-items: flex-start;
   background-color: var(--secondary-black);
-  max-width: 75%;
+  max-width: 80%;
   border-radius: 10px;
+  transform: perspective(600px) rotateY(-7deg);
 }
 
 @media screen and (max-width: 768px) {
   .card-container {
     max-width: 100%;
     background-color: var(--secondary-black);
+    transform: none;
   }
-}
-
-.power-on {
-  box-shadow: 
-    0 0 10px rgba(0, 0, 0, 0.5),
-    0 0 20px var(--tech-color),
-    inset 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.flicker {
-  animation: flicker 2s infinite;
 }
 
 @keyframes flicker {
   0%, 100% {
     box-shadow: 
-      0 0 10px rgba(0, 0, 0, 0.5),
-      0 0 20px var(--tech-color),
-      inset 0 0 10px rgba(0, 0, 0, 0.5);
+      0 0 8px var(--primary-green), /* Base state */
+      0 0 20px var(--primary-green),
+      0 0 40px var(--primary-green);
   }
-  95% {
+  50% {
     box-shadow: 
-      0 0 10px rgba(0, 0, 0, 0.5),
-      0 0 20px var(--tech-color),
-      inset 0 0 10px rgba(0, 0, 0, 0.5);
+      0 0 10px var(--primary-green), /* Slightly more intense */
+      0 0 22px var(--primary-green), /* Slightly wider spread */
+      0 0 42px var(--primary-green); /* Slightly wider spread */
   }
-  96%, 97%, 98%, 99% {
-    box-shadow:
-      0 0 10px rgba(0, 0, 0, 0.5),
-      0 0 18px var(--tech-color),
-      inset 0 0 10px rgba(0, 0, 0, 0.5);
+  25%, 75% {
+    box-shadow: 
+      0 0 6px var(--primary-green), /* Slightly less intense */
+      0 0 18px var(--primary-green), /* Slightly narrower spread */
+      0 0 38px var(--primary-green); /* Slightly narrower spread */
   }
+}
+
+.power-on {
+  /* Existing styles */
+  animation: flicker 1s infinite alternate; /* Adjust timing as needed */
 }
 
 .inner-card-container {
@@ -60,6 +56,9 @@
   flex-direction: column;
   padding: 1rem;
   background-color: var(--primary-black);
+  border-radius: 10px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.10) 0.5px, transparent 1px);
+  background-size: 100% 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -162,7 +161,7 @@
 }
 
 .date-text {
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-lg);
   opacity: var(--opacity-medium);
 }
 
@@ -212,6 +211,7 @@
   color: var(--primary-green);
   margin: 0;
   font-family: var(--font-family-screen);
+  font-size: var(--font-size-lg);
 }
 
 @keyframes blink {
