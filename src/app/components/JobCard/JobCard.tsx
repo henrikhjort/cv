@@ -33,7 +33,7 @@ const JobCard = ({ index, data }: JobCardProps) => {
         <h2 className={`title ${staticFlickerClass}`}>
           {data.title}
           {data.classified ? (
-            <span className="classified-text">[CONFIDENTAL]</span>
+            <span className="classified-text">[CONFIDENTIAL]</span>
           ) : null}
         </h2>
         <h4 className="subtitle">{data.role}</h4>
