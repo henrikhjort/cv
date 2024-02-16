@@ -53,8 +53,8 @@ const LandingSection: React.FC = () => {
         </div>
       </div>
       <div className="scroll-indicator" onClick={scrollToTarget}>
-        <h1 className="scroll-indicator-title">see my work</h1>
-        <Image src="/cta.svg" alt="Scroll Down" width={200} height={200} />
+        <h2 className="scroll-indicator-title">see my work</h2>
+        <Image src="/down.svg" alt="Scroll Down" width={50} height={50} />
       </div>
     </div>
   );

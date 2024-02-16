@@ -31,14 +31,17 @@ const JobSection = ({ index, data }: JobSectionProps) => {
         <div className="image-label-container">
           <h3 className="image-label">{label}</h3>
         </div>
+        <div className="image-wrapper">
           <Image
             src={data.svg}
             alt="mankeli"
             width={500}
             height={800}
             className="image"
+            layout="responsive"
             priority
           />
+        </div>
           <div className="overlay-image-container">
             <Image
               src="/pattern.svg"

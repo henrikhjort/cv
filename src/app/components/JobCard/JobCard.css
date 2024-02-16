@@ -15,6 +15,7 @@
   max-width: 80%;
   border-radius: 10px;
   transform: perspective(600px) rotateY(-7deg);
+  background-size: cover;
 }
 
 .card-container::before {
@@ -26,9 +27,8 @@
   bottom: 0;
   background: url('/pattern.svg');
   background-size: cover;
-  opacity: 0.3; /* Adjust based on your texture */
+  opacity: 0.3;
   z-index: -1;
-  animation: textureMove 30s infinite linear;
 }
 
 @keyframes textureMove {

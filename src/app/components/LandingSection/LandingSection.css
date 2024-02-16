@@ -202,10 +202,13 @@ a {
 .scroll-indicator {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   bottom: 0;
-  opacity: 0.1;
+  opacity: 0.38;
   margin: 0;
+  margin-bottom: 3rem;
 }
 
 .scroll-indicator:hover {
@@ -214,10 +217,11 @@ a {
 }
 
 .scroll-indicator-title {
-  margin-top: 3rem;
+  margin-top: 0;
   margin-bottom: 0;
   margin-left: 0;
-  margin-right: 0;
+  margin-right: 4px;
+  color: var(--primary-white);
 }
 
 @media screen and (max-width: 768px) {
