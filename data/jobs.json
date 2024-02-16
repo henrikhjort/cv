@@ -55,7 +55,7 @@
     "startDate": "2020",
     "endDate": "2020",
     "role": "Personal",
-    "body": "Trained a neural network on images of my friends. The model ended up generating monstrous almost human like pictures which I used in a Tinder-like React app. Works only offline.",
+    "body": "Trained a neural network on images of my friends. The model ended up generating monstrous almost human like pictures which I used in a Tinder-like React app. Only clientside.",
     "technologies": ["React", "PyTorch"],
     "classified": false,
     "svg": "/robo4.svg"
@@ -75,7 +75,7 @@
     "startDate": "2018",
     "endDate": "2022",
     "role": "Exove",
-    "body": "Implementation and maintenance of a cron job that fetches data and creates or updates Drupal nodes. Implementation of a REST API that serves those nodes to a React application.",
+    "body": "Implementation and maintenance of a module that fetches data and creates website content out of it. Implementation of a REST API that serves that content to a React application.",
     "technologies": ["React", "Drupal", "MariaDB"],
     "classified": true,
     "svg": "/robo.svg"
