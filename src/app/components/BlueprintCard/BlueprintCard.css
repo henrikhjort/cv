@@ -1,0 +1,42 @@
+.blueprint-card-container {
+  aspect-ratio: 5 / 7;
+  padding: 1rem;
+  width: 60%;
+  border-radius: 10px;
+  border: solid 1px var(--primary-grey);
+  transform: perspective(600px) rotateY(10deg);
+}
+
+.blueprint-card-inner {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center children vertically */
+  justify-content: center; /* Center children horizontally */
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 1vw 1vw; /* Use vw for both to maintain square grid cells */
+}
+
+.blueprint-overlay-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 90%;
+  z-index: -2;
+  opacity: 0.075;
+  overflow: hidden;
+}
+
+.blueprint-image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blueprint-image {
+  align-self: center;
+}
+

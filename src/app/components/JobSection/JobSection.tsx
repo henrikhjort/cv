@@ -4,6 +4,7 @@ import Image from 'next/image';
 
 import './JobSection.css';
 import JobCard from '../JobCard/JobCard';
+import BlueprintCard from '../BlueprintCard/BlueprintCard';
 import type { Job } from '@/app/types/types';
 
 interface JobSectionProps {
@@ -28,6 +29,8 @@ const JobSection = ({ index, data }: JobSectionProps) => {
   return (
     <div className="section" id={index.toString()}>
       <div className="leftSide">
+        <BlueprintCard index={index} data={data} />
+        {/*
         <div className="image-label-container">
           <h3 className="image-label">{label}</h3>
         </div>
@@ -52,6 +55,7 @@ const JobSection = ({ index, data }: JobSectionProps) => {
               className="overlay-image"
             />
           </div>
+        */}
       </div>
       <div className="rightSide">
         <JobCard index={index} data={data} />

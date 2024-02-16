@@ -18,10 +18,6 @@
 
 .leftSide {
   flex: 2;
-  background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-  background-size: 30px 30px;
   position: relative;
   height: 100vh;
   padding: 1rem;
