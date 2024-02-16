@@ -11,19 +11,18 @@ interface JobSectionProps {
   data: Job
 };
 
-type Dot = {
-  x: number;
-  y: number;
-};
-
 const JobSection = ({ index, data }: JobSectionProps) => {
   const [label, setLabel] = useState('');
+  const [imagePosition, setImagePosition] = useState({ x: '50%', y: '50%' });
 
   useEffect(() => {
     const getRandomNumber = () => Math.floor(Math.random() * 100);
     const getRandomLetter = () => String.fromCharCode(65 + Math.floor(Math.random() * 26));
 
     setLabel(`Exhibit ${getRandomNumber()}${getRandomLetter()}`);
+    const randomX = Math.floor(Math.random() * 100) + '%';
+    const randomY = Math.floor(Math.random() * 100) + '%';
+    setImagePosition({ x: randomX, y: randomY });
   }, []);
 
   return (
@@ -40,6 +39,16 @@ const JobSection = ({ index, data }: JobSectionProps) => {
             className="image"
             priority
           />
+          <div className="overlay-image-container">
+            <Image
+              src="/pattern.svg"
+              alt="Pattern Overlay"
+              layout="fill"
+              objectFit="cover"
+              objectPosition={`${imagePosition.x} ${imagePosition.y}`}
+              className="overlay-image"
+            />
+          </div>
       </div>
       <div className="rightSide">
         <JobCard index={index} data={data} />
