@@ -1,9 +1,16 @@
+"use client";
 import React from 'react';
 import Image from 'next/image';
 import './LandingSection.css';
 
 const LandingSection: React.FC = () => {
   const linkedinUrl = 'https://www.linkedin.com/in/henrik-hjort-50944b107';
+  const scrollToTarget = () => {
+    const targetDiv = document.getElementById('0');
+    if (targetDiv) {
+      targetDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
   return (
     <div className="landing-section">
       <div className="contact-info">
@@ -44,6 +51,10 @@ const LandingSection: React.FC = () => {
             </p>
           </div>
         </div>
+      </div>
+      <div className="scroll-indicator" onClick={scrollToTarget}>
+        <h1 className="scroll-indicator-title">see my work</h1>
+        <Image src="/cta.svg" alt="Scroll Down" width={200} height={200} />
       </div>
     </div>
   );

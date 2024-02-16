@@ -198,3 +198,30 @@ a {
 .socials-item {
   margin-right: 1rem;
 }
+
+.scroll-indicator {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  opacity: 0.1;
+  margin: 0;
+}
+
+.scroll-indicator:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.scroll-indicator-title {
+  margin-top: 3rem;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .scroll-indicator {
+    display: none;
+  }
+}
