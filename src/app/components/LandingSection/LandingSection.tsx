@@ -11,8 +11,9 @@ const LandingSection: React.FC = () => {
       targetDiv.scrollIntoView({ behavior: 'smooth', block: 'end' });
     }
   };
+  
   return (
-    <div className="landing-section">
+    <section className="landing-section">
       <div className="contact-info">
         <a href={linkedinUrl} className="image-container">
           <div className="image-container">
@@ -56,7 +57,7 @@ const LandingSection: React.FC = () => {
         <h2 className="scroll-indicator-title">see my work</h2>
         <Image src="/down.svg" alt="Scroll Down" width={50} height={50} />
       </div>
-    </div>
+    </section>
   );
 };
 

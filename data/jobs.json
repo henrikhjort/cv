@@ -25,7 +25,7 @@
     "startDate": "04/2023",
     "endDate": "09/2023",
     "role": "Exove",
-    "body": "Implementation of an electricity mobile application. Allows users to track consumption, view graphs, compare data, view electricity market price etc. Worked on both client and server side.",
+    "body": "Tech leading a mobile application project. Allows users to track consumption, view graphs, compare data, view electricity market price etc. Worked on both client and server side.",
     "technologies": ["React Native", "Node", "TypeScript", "Azure", "Cosmos DB"],
     "classified": true,
     "svg": "/sahko.svg"

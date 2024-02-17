@@ -31,7 +31,7 @@ const JobSection = () => {
     };
   }, [setCurrentIndex, jobs.length]);
   return (
-    <div className="job-wrapper" id={"0"}>
+    <section className="job-wrapper" id={"0"}>
       <div className="section">
         <div className="leftSide">
           <BlueprintCard index={currentIndex} data={data} />
@@ -43,7 +43,7 @@ const JobSection = () => {
       <div className="navigator-wrapper">
         <JobNavigator />
       </div>
-    </div>
+    </section>
   );
 };
 
