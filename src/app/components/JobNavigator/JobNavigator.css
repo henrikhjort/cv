@@ -1,0 +1,33 @@
+.job-navigator {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 1rem;
+}
+
+.job-badge {
+  background-color: var(--secondary-black);
+  color: var(--primary-white);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 10px;
+  text-transform: uppercase;
+  transition: background-color 0.3s, transform 0.2s;
+  font-family: var(--font-family-screen);
+  font-size: var(--font-size-lg);
+  font-weight: var(--weight-bold);
+  border: solid 1px var(--primary-black);
+}
+
+.selected-badge {
+  background-color: var(--primary-green);
+  color: var(--primary-black);
+}
+
+.job-badge:hover {
+  border: solid 1px var(--primary-green);
+}
+
+.job-badge:focus {
+  outline: none;
+}

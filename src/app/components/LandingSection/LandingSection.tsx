@@ -8,7 +8,7 @@ const LandingSection: React.FC = () => {
   const scrollToTarget = () => {
     const targetDiv = document.getElementById('0');
     if (targetDiv) {
-      targetDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      targetDiv.scrollIntoView({ behavior: 'smooth', block: 'end' });
     }
   };
   return (

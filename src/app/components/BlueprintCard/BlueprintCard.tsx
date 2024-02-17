@@ -35,9 +35,10 @@ const BlueprintCard = ({ index, data }: JobSectionProps) => {
             src={data.svg}
             alt="mankeli"
             width={500}
-            height={800}
+            height={600}
             className="blueprint-image"
             layout="responsive"
+            objectFit="contain"
             priority
           />
         </div>

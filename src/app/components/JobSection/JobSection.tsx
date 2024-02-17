@@ -1,64 +1,47 @@
 "use client";
-import React, { useEffect, useState } from 'react';
-import Image from 'next/image';
+import React, { useMemo, useEffect, useCallback, use } from 'react';
 
 import './JobSection.css';
 import JobCard from '../JobCard/JobCard';
 import BlueprintCard from '../BlueprintCard/BlueprintCard';
-import type { Job } from '@/app/types/types';
+import JobNavigator from '../JobNavigator/JobNavigator';
+import { useJobs } from '@/app/context/JobContext';
 
-interface JobSectionProps {
-  index: number;
-  data: Job
-};
-
-const JobSection = ({ index, data }: JobSectionProps) => {
-  const [label, setLabel] = useState('');
-  const [imagePosition, setImagePosition] = useState({ x: '50%', y: '50%' });
-
+const JobSection = () => {
+  const { currentIndex, setCurrentIndex, jobs } = useJobs();
+  const data = useMemo(() => jobs[currentIndex], [jobs, currentIndex]);
   useEffect(() => {
-    const getRandomNumber = () => Math.floor(Math.random() * 100);
-    const getRandomLetter = () => String.fromCharCode(65 + Math.floor(Math.random() * 26));
+    const handleKeyDown = (event: KeyboardEvent) => {
+      switch (event.key) {
+        case 'ArrowLeft':
+          setCurrentIndex((prevIndex) => prevIndex > 0 ? prevIndex - 1 : jobs.length - 1);
+          break;
+        case 'ArrowRight':
+          setCurrentIndex((prevIndex) => prevIndex < jobs.length - 1 ? prevIndex + 1 : 0);
+          break;
+        default:
+          break;
+      }
+    };
 
-    setLabel(`Exhibit ${getRandomNumber()}${getRandomLetter()}`);
-    const randomX = Math.floor(Math.random() * 100) + '%';
-    const randomY = Math.floor(Math.random() * 100) + '%';
-    setImagePosition({ x: randomX, y: randomY });
-  }, []);
+    window.addEventListener('keydown', handleKeyDown);
 
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [setCurrentIndex, jobs.length]);
   return (
-    <div className="section" id={index.toString()}>
-      <div className="leftSide">
-        <BlueprintCard index={index} data={data} />
-        {/*
-        <div className="image-label-container">
-          <h3 className="image-label">{label}</h3>
+    <div className="job-wrapper" id={"0"}>
+      <div className="section">
+        <div className="leftSide">
+          <BlueprintCard index={currentIndex} data={data} />
         </div>
-        <div className="image-wrapper">
-          <Image
-            src={data.svg}
-            alt="mankeli"
-            width={500}
-            height={800}
-            className="image"
-            layout="responsive"
-            priority
-          />
+        <div className="rightSide">
+          <JobCard index={currentIndex} data={data} />
         </div>
-          <div className="overlay-image-container">
-            <Image
-              src="/pattern.svg"
-              alt="Pattern Overlay"
-              layout="fill"
-              objectFit="cover"
-              objectPosition={`${imagePosition.x} ${imagePosition.y}`}
-              className="overlay-image"
-            />
-          </div>
-        */}
       </div>
-      <div className="rightSide">
-        <JobCard index={index} data={data} />
+      <div className="navigator-wrapper">
+        <JobNavigator />
       </div>
     </div>
   );
