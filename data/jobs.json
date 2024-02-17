@@ -58,7 +58,8 @@
     "body": "Trained a neural network on images of my friends. The model ended up generating monstrous almost human like pictures which I used in a Tinder-like React app. Only clientside.",
     "technologies": ["React", "PyTorch"],
     "classified": false,
-    "svg": "/robo4.svg"
+    "svg": "/robo4.svg",
+    "url": "https://github.com/henrikhjort/plumber"
   },
   {
     "title": "Data processing system",
@@ -88,6 +89,7 @@
     "body": "Scraped deep quotes of life and love from the internet. Trained a language model that generates text from that material. Built a Flask API to serve that and a React app to fetch and display the data.",
     "technologies": ["React", "PyTorch", "Flask"],
     "classified": false,
-    "svg": "/robo4.svg"
+    "svg": "/robo4.svg",
+    "url": "https://github.com/henrikhjort/deep-quotes"
   }
 ]
