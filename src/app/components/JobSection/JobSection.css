@@ -7,6 +7,12 @@
   padding-top: 2rem;
 }
 
+@media (max-width: 768px) {
+  .job-wrapper {
+    display: none;
+  }
+}
+
 .section {
   display: flex;
   flex-direction: row;
