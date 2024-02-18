@@ -8,11 +8,11 @@ import AboutSection from "./components/AboutSection/AboutSection";
 export default function Home() {
   return (
     <main className={styles.main}>
+      <LandingSection />
       <JobProvider>
-        <LandingSection />
         <JobSection />
-        <AboutSection />
       </JobProvider>
+      <AboutSection />
     </main>
   );
 }

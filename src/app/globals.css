@@ -39,6 +39,29 @@
   --tech-color: var(--primary-purple);
 }
 
+/* The scrollbar itself */
+::-webkit-scrollbar {
+  width: 8px; /* Width of vertical scrollbar */
+}
+
+/* The track (progress bar) of the scrollbar */
+::-webkit-scrollbar-track {
+  background: var(--primary-black); /* Color of the track */
+}
+
+/* The handle (thumb) of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-green); /* Color of the thumb */
+  border-radius: 10px; /* Rounded corners of the thumb */
+  overflow:auto;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-white); /* Color of the thumb on hover */
+}
+
+
 html,
 body {
   min-height: 100vh;
