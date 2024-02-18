@@ -3,6 +3,7 @@
   grid-template-columns: repeat(3, calc((100% - 20px) / 3));
   width: 100%;
   gap: 10px;
+  padding: 5vh;
 }
 
 .grid-item {

@@ -1,5 +1,6 @@
 "use client";
-import React, { useMemo, useEffect, useCallback, use } from 'react';
+import React, { useMemo, useEffect} from 'react';
+import Image from 'next/image';
 
 import './JobSection.css';
 import JobCard from '../JobCard/JobCard';

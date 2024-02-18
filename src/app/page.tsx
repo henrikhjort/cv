@@ -9,10 +9,10 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <LandingSection />
+      <AboutSection />
       <JobProvider>
         <JobSection />
       </JobProvider>
-      <AboutSection />
     </main>
   );
 }
