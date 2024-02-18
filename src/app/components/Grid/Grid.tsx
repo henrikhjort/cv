@@ -14,7 +14,7 @@ import {
   SiDrupal,
   SiWordpress,
   SiGithubactions,
-  SiPostgresql
+  SiPostgresql,
 } from 'react-icons/si';
 
 const items = [
