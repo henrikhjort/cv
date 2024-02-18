@@ -11,7 +11,10 @@ const AboutSection = () => {
           <p className="body-text about-text">I like to build web things.</p>
           <p className="body-text about-text">{"I'm a software developer with 5+ years of experience in consulting."}</p>
           <p className="body-text about-text">{"Currently I enjoy working with React, React Native, and Node.js."}</p>
-          <p className="body-text about-text">{"Scroll down to see projects that I have worked on."}</p>
+          <p className="body-text about-text">
+            {"Scroll down to see projects that I have worked on."}
+            <span className="cursor">_</span>
+          </p>
         </div>
       </div>
       <div className="right">

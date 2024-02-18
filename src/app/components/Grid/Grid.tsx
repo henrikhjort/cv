@@ -92,7 +92,6 @@ const Grid = () => {
               }
           }
       }
-
       return winConditions;
   }, []);
 
