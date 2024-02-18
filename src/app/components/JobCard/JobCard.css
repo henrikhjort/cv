@@ -16,7 +16,7 @@
   border-radius: 10px;
   transform: perspective(600px) rotateY(-7deg);
   background-size: cover;
-  aspect-ratio: 8 / 4;
+  aspect-ratio: 2 / 1;
 }
 
 .card-container::before {
@@ -79,7 +79,7 @@
   border-radius: 10px;
   background-image: linear-gradient(rgba(255, 255, 255, 0.10) 0.5px, transparent 1px);
   background-size: 100% 10px;
-  aspect-ratio: 8 / 4;
+  height: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -257,7 +257,7 @@
   color: var(--primary-green);
   margin: 0;
   font-family: var(--font-family-screen);
-  font-size: var(--font-size-lg);
+  font-size: 2.2vh;
   margin: 4px;
 }
 

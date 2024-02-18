@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 100vh; /* Makes the job-wrapper take up the full height of the viewport */
+  height: 100vh;
   padding-top: 2rem;
 }
 
