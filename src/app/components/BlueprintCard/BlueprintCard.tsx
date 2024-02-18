@@ -20,16 +20,6 @@ const BlueprintCard = ({ index, data }: JobSectionProps) => {
   return (
       <div className="blueprint-card-container">
         <div className="blueprint-card-inner">
-          <div className="blueprint-overlay-container">
-            <Image
-              src={whichSvg()}
-              alt="Pattern Overlay"
-              layout="fill"
-              objectFit="cover"
-              objectPosition={`${Math.floor(Math.random() * 100) + '%'} ${Math.floor(Math.random() * 100) + '%'}`}
-              className="overlay-image"
-            />
-          </div>
         <div className="blueprint-image-wrapper">
           <Image
             src={data.svg}
