@@ -11,10 +11,12 @@
 
 .grid {
   display: grid;
+  flex-grow: 1;
   grid-template-columns: repeat(3, calc((100% - 20px) / 3));
   width: 100%;
   gap: 10px;
   padding: 10vh;
+  height: 80vh;
 }
 
 .grid-item {
@@ -25,4 +27,28 @@
   color: var(--primary-white);
   border-radius: 10px;
   z-index: 1;
+  cursor: pointer;
+}
+
+.grid-item-x {
+  color: var(--primary-green);
+  cursor: default;
+}
+
+.grid-item-o {
+  color: var(--primary-purple);
+  cursor: default;
+}
+
+.win-count {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  font-family: var(--font-family-screen);
+  margin-left: 4px;
+}
+
+.hidden {
+  opacity: 0;
 }
