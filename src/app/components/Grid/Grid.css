@@ -28,6 +28,7 @@
   border-radius: 10px;
   z-index: 1;
   cursor: pointer;
+  border: 2px solid var(--secondary-black);
 }
 
 .grid-item-x {
@@ -35,9 +36,25 @@
   cursor: default;
 }
 
+.grid-item-x:hover {
+  border: 2px solid var(--secondary-black);
+}
+
 .grid-item-o {
   color: var(--primary-purple);
   cursor: default;
+}
+
+.grid-item-o:hover {
+  border: 2px solid var(--secondary-black);
+}
+
+.hover-green:hover {
+  border: 2px solid var(--primary-green);
+}
+
+.hover-purple:hover {
+  border: 2px solid var(--primary-purple);
 }
 
 .win-count {

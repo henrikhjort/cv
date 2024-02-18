@@ -15,7 +15,7 @@
   font-family: var(--font-family-screen);
   font-size: var(--font-size-lg);
   font-weight: var(--weight-bold);
-  border: solid 1px var(--primary-black);
+  border: solid 2px var(--primary-black);
 }
 
 .selected-badge {
@@ -24,7 +24,7 @@
 }
 
 .job-badge:hover {
-  border: solid 1px var(--primary-green);
+  border: solid 2px var(--primary-green);
 }
 
 .job-badge:focus {

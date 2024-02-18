@@ -130,10 +130,21 @@ useEffect(() => {
     }
   }
 
+  const hover = (index: number) => {
+    if (ticTacToe[index]) {
+      return '';
+    }
+    if (isX) {
+      return 'hover-green';
+    } else {
+      return 'hover-purple';
+    }
+  }
+
   return (
     <div className="grid">
       {items.map(({ title, Icon }, index) => (
-        <div key={index} className={`grid-item ${getClassName(index)}`} onClick={() => handleSelect(index)}>
+        <div key={index} className={`grid-item ${getClassName(index)} ${hover(index)}`} onClick={() => handleSelect(index)}>
           <Icon size="10vh" />
         </div>
       ))}
