@@ -11,12 +11,6 @@ interface JobSectionProps {
 };
 
 const BlueprintCard = ({ index, data }: JobSectionProps) => {
-  const whichSvg = () => {
-    if (Math.random() > 0.5) {
-      return '/pattern.svg';
-    }
-    return '/pattern2.svg';
-  }
   return (
       <div className="blueprint-card-container">
         <div className="blueprint-card-inner">
