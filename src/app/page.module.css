@@ -6,7 +6,7 @@
   height: 100vh;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .main {
     scroll-snap-type: none;
   }

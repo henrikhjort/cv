@@ -32,7 +32,7 @@
   align-items: flex-start;
   padding: 2rem;
   padding-left: 4rem;
-  flex: 2;
+  flex: 3;
 }
 
 .left h2 {
@@ -56,7 +56,6 @@
 .right {
   display: flex;
   flex: 1;
-  padding: 2rem;
 }
 
 @media screen and (max-width: 768px) {
