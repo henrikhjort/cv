@@ -1,6 +1,7 @@
 import React from 'react';
 import './AboutSection.css';
 import Grid from '../Grid/Grid';
+import Button from '../Button/Button';
 
 const AboutSection = () => {
   return (
@@ -15,6 +16,7 @@ const AboutSection = () => {
             {"Scroll down to see projects that I have worked on."}
             <span className="cursor">_</span>
           </p>
+          <Button title="download_cv()" file="/cv_henrik_hjort.pdf" />
         </div>
       </div>
       <div className="right">

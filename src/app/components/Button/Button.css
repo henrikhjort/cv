@@ -1,0 +1,24 @@
+.button {
+  position: relative;
+  background-color: var(--secondary-black);
+  color: var(--primary-white);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 10px 10px 0 0 var(--primary-green);
+  font-family: var(--font-family-screen);
+  font-size: var(--font-size-lg);
+  font-weight: var(--weight-medium);
+  width: 300px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.button:hover {
+  box-shadow: none;
+  border: 2px solid var(--primary-green);
+}
