@@ -16,9 +16,17 @@
   width: 300px;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  border: 2px solid transparent;
 }
 
 .button:hover {
   box-shadow: none;
   border: 2px solid var(--primary-green);
 }
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--primary-green);
+  color: var(--primary-white);
+}
+

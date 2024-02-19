@@ -2,7 +2,7 @@
   aspect-ratio: 5 / 7;
   padding: 1rem;
   width: 70%;
-  height: 80%;
+  max-height: 80%;
   border-radius: 10px;
   border: solid 1px var(--primary-grey);
   transform: perspective(600px) rotateY(10deg);

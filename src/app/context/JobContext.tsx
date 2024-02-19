@@ -1,4 +1,4 @@
-// JobContext.tsx
+"use client";
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 import type { Job } from '../types/types';
 import data from '../../../data/jobs.json';
