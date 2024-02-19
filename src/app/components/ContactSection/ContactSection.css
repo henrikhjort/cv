@@ -12,6 +12,12 @@
   margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 768px) {
+  .contact-wrapper {
+    display: none;
+  }
+}
+
 .contact-wrapper::before {
   content: ' ';
   display: block;

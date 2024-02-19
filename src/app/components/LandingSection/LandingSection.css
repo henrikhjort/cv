@@ -13,6 +13,12 @@
   word-wrap: break-word;
 }
 
+@media screen and (max-width: 768px) {
+  .landing-section button {
+    display: none;
+  }
+}
+
 .image-container {
   display: flex;
   flex-direction: column;
@@ -228,4 +234,8 @@ a {
   .scroll-indicator {
     display: none;
   }
+}
+
+.sorry {
+  color: var(--primary-green);
 }

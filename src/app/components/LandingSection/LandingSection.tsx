@@ -1,11 +1,14 @@
+"use client";
 import React from 'react';
 import Image from 'next/image';
 import './LandingSection.css';
+import Button from '../Button/Button';
 
 const LandingSection: React.FC = () => {
   const linkedinUrl = 'https://www.linkedin.com/in/henrik-hjort-50944b107';
+
   const scrollToTarget = () => {
-    const targetDiv = document.getElementById('0');
+    const targetDiv = document.getElementById('3');
     if (targetDiv) {
       targetDiv.scrollIntoView({ behavior: 'smooth', block: 'end' });
     }
@@ -37,11 +40,7 @@ const LandingSection: React.FC = () => {
             </div>
           </div>
           <p className="contact-info-title">software developer</p>
-          <p className="contact-info-email">
-            <a href="mailto:henrik.m.hjort@gmail.com" style={{ textDecoration: 'none', color: 'inherit' }}>
-              henrik.m.hjort(at)gmail.com
-            </a>
-          </p>
+          <Button title='contact()' onClick={scrollToTarget}/>
           <div className="socials-row">
             <p className="socials-item">
               <a href="https://github.com/henrikhjort" style={{ textDecoration: 'none', color: 'inherit' }}>github</a>
@@ -50,6 +49,7 @@ const LandingSection: React.FC = () => {
               <a href={linkedinUrl} style={{ textDecoration: 'none', color: 'inherit' }}>linkedin</a>
             </p>
           </div>
+          <p className="sorry">mobile layout in progress, sorry</p>
         </div>
       </div>
       {/*
