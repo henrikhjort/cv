@@ -49,6 +49,7 @@ const ContactForm: React.FC = () => {
     }
     if (!isValidMessage(formData.message)) {
       setMessageError('Write something :(');
+      return;
     }
     try {
       const response = await fetch('/api/submit-form', {
