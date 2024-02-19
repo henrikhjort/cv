@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 
 const Navbar: React.FC = () => {
-  const [activeSection, setActiveSection] = useState('');
+  const [activeSection, setActiveSection] = useState('0');
 
   useEffect(() => {
     const sections = ['0', '1', '2', '3'];
