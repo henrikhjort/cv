@@ -15,7 +15,7 @@ const LandingSection: React.FC = () => {
   };
   
   return (
-    <section className="landing-section">
+    <section className="landing-section" id="0">
       <div className="contact-info">
         <a href={linkedinUrl} className="image-container">
           <div className="image-container">

@@ -32,7 +32,7 @@ const JobSection = () => {
     };
   }, [setCurrentIndex, jobs.length]);
   return (
-    <section className="job-wrapper" id={"0"}>
+    <section className="job-wrapper" id={"2"}>
       <div className="section">
         <div className="leftSide">
           <BlueprintCard index={currentIndex} data={data} />

@@ -23,6 +23,7 @@ const ContactForm: React.FC = () => {
   const [emailError, setEmailError] = useState<string>('');
   const [messageError, setMessageError] = useState<string>('');
   const [result, setResult] = useState<Result | null>(null);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const isValidEmail = (email: string) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -52,6 +53,7 @@ const ContactForm: React.FC = () => {
       return;
     }
     try {
+      setIsLoading(true);
       const response = await fetch('/api/submit-form', {
         method: 'POST',
         headers: {
@@ -60,7 +62,7 @@ const ContactForm: React.FC = () => {
         body: JSON.stringify(formData),
       });
       if (response.ok) {
-        // Handle success response
+        setIsLoading(false);
         setFormData({
           email: '',
           message: '',
@@ -72,6 +74,7 @@ const ContactForm: React.FC = () => {
         
         }, 3000);
       } else {
+        setIsLoading(false);
         setResult({ message: 'Something went wrong', ok: false });
         setTimeout(() => {
           setResult(null);
@@ -79,6 +82,7 @@ const ContactForm: React.FC = () => {
         }, 3000);
       }
     } catch (error) {
+        setIsLoading(false);
         setResult({ message: 'Something went horribly wrong.', ok: false });
         setTimeout(() => {
           setResult(null);
@@ -111,6 +115,7 @@ const ContactForm: React.FC = () => {
           required
           autoComplete="off"
           type="email"
+          disabled={isLoading}
           maxLength={45}
           onFocus={() => {
             setEmailError('')
@@ -131,6 +136,7 @@ const ContactForm: React.FC = () => {
           value={formData.message}
           onChange={handleChange}
           required
+          disabled={isLoading}
           maxLength={300}
           onFocus={() => {
             setMessageError('')

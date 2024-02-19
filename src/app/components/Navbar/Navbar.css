@@ -1,0 +1,43 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: var(--primary-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px){
+  .navbar {
+    display: none;
+  }
+}
+
+.navbar button {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+  font-family: var(--font-family-screen);
+  font-size: var(--font-size-lg);
+  margin: 1rem;
+  padding: 4px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  transition: color 0.3s;
+  border: 2px solid transparent;
+}
+
+.navbar button:hover, .navbar {
+  border-bottom-color: var(--primary-green);
+  cursor: pointer;
+}
+
+.navbar-link.active {
+  border-bottom-color: var(--primary-green);
+}
+
+.navbar button:focus {
+  outline: none;
+}
