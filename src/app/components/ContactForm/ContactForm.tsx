@@ -137,7 +137,7 @@ const ContactForm: React.FC = () => {
             setResult(null)
           }}
         />
-        <input autoComplete='off' type="text" name="phone" className="phone" value={formData.phone}/>
+        <input onChange={handleChange} autoComplete='off' type="text" name="phone" className="phone" value={formData.phone}/>
         {messageError && <label className="error-label">{messageError}</label>}
         {!result &&
           <div className="label-group">
