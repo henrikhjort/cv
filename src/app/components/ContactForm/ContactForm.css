@@ -90,6 +90,6 @@
   border-radius: 10px;
 }
 
-.honeypot {
-  display: none;
+.phone {
+  opacity: 0;
 }

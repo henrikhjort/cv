@@ -6,7 +6,7 @@ import './ContactForm.css';
 export type ContactFormData = {
   email: string;
   message: string;
-  honeypot: string;
+  phone: string;
 }
 
 type Result = {
@@ -18,7 +18,7 @@ const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState<ContactFormData>({
     email: '',
     message: '',
-    honeypot: '',
+    phone: '',
   });
   const [emailError, setEmailError] = useState<string>('');
   const [messageError, setMessageError] = useState<string>('');
@@ -63,7 +63,7 @@ const ContactForm: React.FC = () => {
         setFormData({
           email: '',
           message: '',
-          honeypot: '',
+          phone: '',
         });
         setResult({ message: 'Thank you for reaching out!', ok: true });
         setTimeout(() => {
@@ -136,7 +136,7 @@ const ContactForm: React.FC = () => {
             setResult(null)
           }}
         />
-        <input type="text" name="honeypot" className="honeypot" value={formData.honeypot}/>
+        <input autoComplete='off' type="text" name="phone" className="phone" value={formData.phone}/>
         {messageError && <label className="error-label">{messageError}</label>}
         {!result &&
           <div className="label-group">
