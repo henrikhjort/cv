@@ -17,19 +17,6 @@ const LandingSection: React.FC = () => {
   return (
     <section className="landing-section" id="0">
       <div className="contact-info">
-        <a href={linkedinUrl} className="image-container">
-          <div className="image-container">
-            <Image
-              src={'/silma.svg'}
-              alt="subject_0"
-              width={300}
-              height={200}
-              className="image"
-              priority
-            />
-            <p className="image-text">subject_0</p>
-          </div>
-        </a>
         <div className="contact-rows">
           <div className="name-container">
             <div className="first-name-container">
@@ -40,7 +27,6 @@ const LandingSection: React.FC = () => {
             </div>
           </div>
           <p className="contact-info-title">software developer</p>
-          <Button title='contact()' onClick={scrollToTarget}/>
           <div className="socials-row">
             <p className="socials-item">
               <a href="https://github.com/henrikhjort" style={{ textDecoration: 'none', color: 'inherit' }}>github</a>
@@ -49,15 +35,10 @@ const LandingSection: React.FC = () => {
               <a href={linkedinUrl} style={{ textDecoration: 'none', color: 'inherit' }}>linkedin</a>
             </p>
           </div>
+          <Button title='contact()' onClick={scrollToTarget}/>
           <p className="sorry">mobile layout in progress, sorry</p>
         </div>
       </div>
-      {/*
-      <div className="scroll-indicator" onClick={scrollToTarget}>
-        <h2 className="scroll-indicator-title">see my work</h2>
-        <Image src="/down.svg" alt="Scroll Down" width={50} height={50} />
-      </div>
-  */}
     </section>
   );
 };

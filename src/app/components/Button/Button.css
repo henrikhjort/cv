@@ -6,22 +6,23 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: var(--font-size-lg);
   border-radius: 10px;
   cursor: pointer;
-  box-shadow: 10px 10px 0 0 var(--primary-green);
+  box-shadow: 6px 6px 0 0 var(--primary-green);
   font-family: var(--font-family-screen);
-  font-size: var(--font-size-lg);
   font-weight: var(--weight-medium);
   width: 300px;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  border: 2px solid transparent;
+  border: 2px solid var(--primary-black);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .button:hover {
-  box-shadow: none;
-  border: 2px solid var(--primary-green);
+  box-shadow: 3px 3px 0 0 var(--primary-green);
+  opacity: 0.85;
+  transform: translate(4px, 4px);
 }
 
 .button:focus {
@@ -29,4 +30,3 @@
   box-shadow: 0 0 0 2px var(--primary-green);
   color: var(--primary-white);
 }
-
