@@ -133,6 +133,7 @@ const ContactForm: React.FC = () => {
             setResult(null)
           }}
         />
+        <input type="text" name="honeypot" className="honeypot"/>
         {messageError && <label className="error-label">{messageError}</label>}
         {!result &&
           <div className="label-group">

@@ -239,3 +239,10 @@ a {
 .sorry {
   color: var(--primary-green);
 }
+
+@media screen and (min-width: 768px) {
+  .sorry {
+    display: none;
+  }
+  
+}
