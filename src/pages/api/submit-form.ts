@@ -11,7 +11,7 @@ export default function handler(
 ) {
   if (req.method === 'POST') {
     try {
-      if (req.body.honeypot) {
+      if (req.body.honeypot !== '') {
         return res.status(400).json({ status: 'error', message: 'eat shit :D' });
       }
       const TO_MAIL = process.env.TO_MAIL;
