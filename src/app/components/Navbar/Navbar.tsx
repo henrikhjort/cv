@@ -4,13 +4,11 @@ import './Navbar.css';
 
 const Navbar: React.FC = () => {
   const [activeSection, setActiveSection] = useState('');
-  console.log('act', activeSection);
 
   useEffect(() => {
     const sections = ['0', '1', '2', '3'];
     const observer = new IntersectionObserver(
       (entries) => {
-        console.log(entries[0].target.id);
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setActiveSection(entry.target.id);
