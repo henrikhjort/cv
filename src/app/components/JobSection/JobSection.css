@@ -1,10 +1,9 @@
 .job-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   height: 100vh;
-  padding-top: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -13,104 +12,39 @@
   }
 }
 
-.section {
+.job-left {
+  color: var(--primary-white);
   display: flex;
-  flex-direction: row;
-  width: 100%;
-  min-height: 80vh;
-  align-items: flex-start;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  scroll-snap-align: start;
-  background-color: yellow;
+  flex: 1;
+  padding-left: 4rem;
 }
 
-.leftSide, .rightSide {
+.job-left h2 {
+  font-size: 15vh;
+  letter-spacing: -0.5vw;
+  line-height: 0%;
+  margin-top: 2rem;
+}
+
+.about-text-wrapper-job {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--primary-black);
-}
-
-.leftSide {
-  flex: 2;
-  position: relative;
-  padding: 1rem;
-  height: 100%;
-}
-
-.rightSide {
-  flex: 1;
-  position: relative;
-  height: 100%;
-}
-
-.image-label-container {
-  background-color: var(--primary-black);
-  padding: 5px;
-  border-radius: 20px;
-  z-index: 1;
-  margin-top: 3rem;
-}
-
-.image-wrapper {
-  width: 100%; /* Makes the container full width */
-  max-width: 500px; /* Adjust based on the maximum size you want */
-  margin: auto; /* Centers the container if it's smaller than the screen */
-  position: relative; /* Needed for the absolute positioning of the overlay */
-  height: auto; /* Height is auto to maintain the aspect ratio */
-}
-
-.image {
-  align-self: center;
-}
-
-.overlay-image-container {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
+}
+
+.about-text {
+  padding-bottom: 1rem;
+}
+
+.job-right {
+  display: flex;
+  flex-direction: column;
   height: 100%;
-  z-index: 2;
-  opacity: 0.05;
-}
-
-.annotation {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  color: var(--primary-green);
-  font-family: var(--font-family-screen);
-}
-
-.image-label {
-  color: var(--primary-green);
-  margin: 0;
-  font-family: var(--font-family-screen);
-  font-size: var(--font-size-xxl);
-}
-
-.rightSide {
-  flex: 3;  
-  padding: 1rem;
-}
-
-@media (max-width: 768px) {
-  .leftSide {
-    display: none;
-  }
-}
-
-.navigator-wrapper {
-  display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 8rem;
-  padding: 1rem;
-}
-
-@media (max-width: 768px) {
-  .navigator-wrapper {
-    display: none;
-  }
+  flex: 3;
 }

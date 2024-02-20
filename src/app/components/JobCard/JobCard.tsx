@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 import './JobCard.css';
 import type { Job } from '@/app/types/types';
+import BlueprintCard from '../BlueprintCard/BlueprintCard';
 
 interface JobCardProps {
   index: number;
@@ -20,39 +21,34 @@ const JobCard = ({ index, data }: JobCardProps) => {
   return (
     <div className={`card-container ${techColorClass}`}>
       <div className={`inner-card-container ${backlightClass}`}>
-        <div className="mobile-image-container">
-          <Image
-            src={data.svg}
-            alt="mankeli"
-            width={15}
-            height={15}
-            className="mobile-image"
-            priority
-          />
+        <div className="card-left">
+          <h2 className={`title ${staticFlickerClass}`}>
+            {data.title}
+            {data.classified ? (
+              <span className="classified-text">[CONFIDENTIAL]</span>
+            ) : null}
+          </h2>
+          <h4 className="subtitle">{data.role}</h4>
+          <p className="date-text">{data.startDate} - {data.endDate}</p>
+          <div className="body-container">
+            <p className="body-text">
+              {data.body}
+              {isFlickering ? (
+                <span className="cursor">_</span>) : null}
+            </p>
+            {data.technologies ? (
+              <div className="tech-container">
+                <h4 className={`tech-title ${techColorClass}`}>Technologies</h4>
+                <p className="tech-text">{data.technologies.join(', ')}</p>
+              </div>
+            ) : null}
+            {data.url ? (
+              <p className="job-url"><a href={data.url}>github</a></p>
+            ): null}
+          </div>
         </div>
-        <h2 className={`title ${staticFlickerClass}`}>
-          {data.title}
-          {data.classified ? (
-            <span className="classified-text">[CONFIDENTIAL]</span>
-          ) : null}
-        </h2>
-        <h4 className="subtitle">{data.role}</h4>
-        <p className="date-text">{data.startDate} - {data.endDate}</p>
-        <div className="body-container">
-          <p className="body-text">
-            {data.body}
-            {isFlickering ? (
-              <span className="cursor">_</span>) : null}
-          </p>
-          {data.technologies ? (
-            <div className="tech-container">
-              <h4 className={`tech-title ${techColorClass}`}>Technologies</h4>
-              <p className="tech-text">{data.technologies.join(', ')}</p>
-            </div>
-          ) : null}
-          {data.url ? (
-            <p className="job-url"><a href={data.url}>github</a></p>
-          ): null}
+        <div className="card-right">
+          <BlueprintCard index={index} data={data} />
         </div>
       </div>
       <div className="button-row">

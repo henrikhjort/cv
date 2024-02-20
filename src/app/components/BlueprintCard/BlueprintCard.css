@@ -5,7 +5,6 @@
   max-height: 80%;
   border-radius: 10px;
   border: solid 1px var(--primary-grey);
-  transform: perspective(600px) rotateY(10deg);
 }
 
 .blueprint-card-inner {

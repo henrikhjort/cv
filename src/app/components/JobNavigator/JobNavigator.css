@@ -3,6 +3,7 @@
   overflow-x: auto;
   white-space: nowrap;
   gap: 1rem;
+  margin-top: 1rem;
 }
 
 .job-badge {

@@ -12,9 +12,8 @@
   padding: 1rem;
   align-items: flex-start;
   background-color: var(--secondary-black);
-  width: 80%;
+  width: 75%;
   border-radius: 10px;
-  transform: perspective(600px) rotateY(-7deg);
   background-size: cover;
   aspect-ratio: 2 / 1;
 }
@@ -73,7 +72,7 @@
 
 .inner-card-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding: 1rem;
   background-color: var(--primary-black);
   border-radius: 10px;
@@ -81,6 +80,20 @@
   background-size: 100% 10px;
   height: 100%;
   width: 100%;
+}
+
+.card-left {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+
+.card-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
 }
 
 @media screen and (max-width: 768px) {
