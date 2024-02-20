@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   background-color: var(--primary-black);
 }
 
@@ -13,8 +12,7 @@
   grid-template-columns: repeat(3, calc((100% - 20px) / 3));
   width: 100%;
   gap: 10px;
-  padding: 10vh;
-  height: 80vh;
+  padding: 15vh;
 }
 
 .grid-item {
