@@ -11,6 +11,20 @@
   background-color: var(--primary-black);
   scroll-snap-align: start;
   word-wrap: break-word;
+  z-index: 1;
+  position: relative;
+}
+
+.landing-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/pattern.svg");
+  opacity: 0.1;
+  z-index: -1;
 }
 
 @media screen and (max-width: 768px) {
@@ -49,7 +63,7 @@
 
 .contact-info {
   display: flex;
-  background-color: var(--primary-black);
+  background-color: transparent;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: flex-start;
@@ -86,7 +100,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--primary-black);
+  background-color: transparent;
   color: var(--primary-black);
   margin: 0;
   height: 50px;
@@ -153,7 +167,8 @@ a {
 
 .contact-info-title {
   font-size: var(--font-size-xxl);
-  opacity: var(--opacity-low);
+  color: var(--primary-green);
+  font-family: var(--font-family-screen);
   margin: 0;
 }
 
