@@ -14,7 +14,7 @@
     "startDate": "02/2024",
     "endDate": "Present",
     "role": "Personal",
-    "body": "Soundboard application where users can play, upload files and record clips. Built an FFMPEG layer to convert audio files to MP3 before pushing to my S3 bucket.",
+    "body": "Soundboard application where users can play, upload files and record clips. Built an FFMPEG layer to convert audio files to MP3 before pushing them to S3 bucket.",
     "technologies": ["SvelteKit", "Nodejs", "AWS S3"],
     "classified": false,
     "svg": "/robo4.svg"
