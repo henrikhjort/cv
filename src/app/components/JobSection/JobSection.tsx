@@ -37,7 +37,7 @@ const JobSection = () => {
         <div className="about-text-wrapper-job">
           <p className="body-text about-text">I have worked on a variety of different projects as a full stack developer.</p>
           <p className="body-text about-text">{"I have experience in leading development teams and managing client relationships."}</p>
-          <p className="body-text about-text">{"This is a collection of some of the things I have worked on both professionally and personally."}</p>
+          <p className="body-text about-text">{"This is a collection of some of the things I have worked on both professionally and unprofessionally."}</p>
           <p className="body-text about-text">
             {"Use arrow keys to navigate through the projects."}
             <span className="cursor">_</span>
