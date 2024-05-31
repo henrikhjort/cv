@@ -10,7 +10,7 @@ const AboutSection = () => {
         <h2>about</h2>
         <div className="about-text-wrapper">
           <p className="body-text about-text">I like to build things.</p>
-          <p className="body-text about-text">{"However I lack real handyman skills so I have to build imaginary computer things."}</p>
+          <p className="body-text about-text">{"Most comfortable with React + Node type of stuff."}</p>
           <p className="body-text about-text">
             {"Scroll down to see projects that I have worked on."}
             <span className="cursor">_</span>
